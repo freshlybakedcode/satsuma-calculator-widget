@@ -2,16 +2,16 @@ var data =  [
 {
 	"Region": "Unit",
 	"Average rental April 16": "\u00a3",
-	"Average rental March 15": "\u00a3",
+	"Average rental March 16": "\u00a3",
 	"Monthly variance": "%",
 	"Average rental April 15": "\u00a3",
-	"Annual variance": "\u00a3",
+	"Annual variance": "%",
 	"Average": "\u00a3"
 },
 {
 	"Region": "Scotland",
 	"Average rental April 16": "704",
-	"Average rental March 15": "677",
+	"Average rental March 16": "677",
 	"Monthly variance": "104",
 	"Average rental April 15": "632",
 	"Annual variance": "111",
@@ -20,7 +20,7 @@ var data =  [
 {
 	"Region": "North East",
 	"Average rental April 16": "532",
-	"Average rental March 15": "531",
+	"Average rental March 16": "531",
 	"Monthly variance": "100",
 	"Average rental April 15": "524",
 	"Annual variance": "102",
@@ -29,7 +29,7 @@ var data =  [
 {
 	"Region": "Yorks and Humber",
 	"Average rental April 16": "627",
-	"Average rental March 15": "627",
+	"Average rental March 16": "627",
 	"Monthly variance": "100",
 	"Average rental April 15": "598",
 	"Annual variance": "105",
@@ -38,7 +38,7 @@ var data =  [
 {
 	"Region": "North West",
 	"Average rental April 16": "659",
-	"Average rental March 15": "648",
+	"Average rental March 16": "648",
 	"Monthly variance": "102",
 	"Average rental April 15": "659",
 	"Annual variance": "100",
@@ -47,7 +47,7 @@ var data =  [
 {
 	"Region": "East Midland",
 	"Average rental April 16": "646",
-	"Average rental March 15": "646",
+	"Average rental March 16": "646",
 	"Monthly variance": "100",
 	"Average rental April 15": "599",
 	"Annual variance": "108",
@@ -56,7 +56,7 @@ var data =  [
 {
 	"Region": "West Midlands",
 	"Average rental April 16": "659",
-	"Average rental March 15": "656",
+	"Average rental March 16": "656",
 	"Monthly variance": "100",
 	"Average rental April 15": "644",
 	"Annual variance": "102",
@@ -65,7 +65,7 @@ var data =  [
 {
 	"Region": "East Anglia",
 	"Average rental April 16": "809",
-	"Average rental March 15": "803",
+	"Average rental March 16": "803",
 	"Monthly variance": "101",
 	"Average rental April 15": "776",
 	"Annual variance": "104",
@@ -74,7 +74,7 @@ var data =  [
 {
 	"Region": "Greater London",
 	"Average rental April 16": "1543",
-	"Average rental March 15": "1536",
+	"Average rental March 16": "1536",
 	"Monthly variance": "100",
 	"Average rental April 15": "1433",
 	"Annual variance": "108",
@@ -83,7 +83,7 @@ var data =  [
 {
 	"Region": "South East",
 	"Average rental April 16": "963",
-	"Average rental March 15": "950",
+	"Average rental March 16": "950",
 	"Monthly variance": "101",
 	"Average rental April 15": "916",
 	"Annual variance": "105",
@@ -92,7 +92,7 @@ var data =  [
 {
 	"Region": "South West",
 	"Average rental April 16": "891",
-	"Average rental March 15": "880",
+	"Average rental March 16": "880",
 	"Monthly variance": "101",
 	"Average rental April 15": "863",
 	"Annual variance": "103",
@@ -101,7 +101,7 @@ var data =  [
 {
 	"Region": "Northern Ireland",
 	"Average rental April 16": "608",
-	"Average rental March 15": "608",
+	"Average rental March 16": "608",
 	"Monthly variance": "100",
 	"Average rental April 15": "590",
 	"Annual variance": "103",
