@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Ultima";
+	src: url("https://www.satsumaloans.co.uk/fonts/ultimapro-bold-webfont.woff") format("woff"), url("https://www.satsumaloans.co.uk/fonts/ultimapro-bold-webfont.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	font-family: "Open-sans", sans-serif;
+	color: #333;
+}
+h1 {
+	margin:0;
+	padding:0;
+}
+a {
+	font-family: "Ultima", sans-serif;
+	color: #ed1f24;
+	display: block;
+}
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	background: url(header.jpg) no-repeat;
+	background-size: contain;
+	padding-top: 41.6%;
+	position: relative;
+	margin-bottom: 120px;
+}
+.header .text {
+	position: absolute;
+	background: rgb(238,117,0); /* fallback */
+	background: linear-gradient(to right, rgba(238,117,0,1) 0%,rgba(224,49,30,1) 100%);
+	color: white;
+	padding: 10px;
+	font-size: 1em;
+	font-family: "Ultima", sans-serif;
+	width: 100%;
+	text-align: center;
+}
+.footer {
+	width: 100%;
+	background: rgb(238,117,0); /* fallback */
+	background: linear-gradient(to right, rgba(238,117,0,1) 0%,rgba(224,49,30,1) 100%);
+	clear: both;
+	display: inline-block;
+	margin-top: 20px;
+}
+.footer img {
+	margin: 15px 0 15px 30px;
+}
+.main {
+	padding: 10px;
+}
+
+.col-sm-6 {
+	width: 50%;
+	float: left;
+}
+.col-md-6 {
+	width: 100%;
+}
+.col-sm-12 {
+	width: 100%;
+}
+.social-media {
+	font-family: "Ultima", sans-serif;
+	margin-top: 20px;
+}
+.icon-social {
+	width: 33px;
+	height: 33px;
+}
+.twitter-icon {
+	background: url(https://www.satsumaloans.co.uk/content/sprites/pfg.png) -1195px -1px;
+}
+.facebook-icon {
+    background: url(https://www.satsumaloans.co.uk/content/sprites/pfg.png) -1093px -1px;
+}
+.google-icon {
+	background: url(https://www.satsumaloans.co.uk/content/sprites/pfg.png) -1127px -1px;
+}
+.youtube-icon {
+	background: url(https://www.satsumaloans.co.uk/content/sprites/pfg.png) -1229px -1px;
+}
+.pinterest-icon {
+	background: url(https://www.satsumaloans.co.uk/content/sprites/pfg.png) -1161px -1px;
+}
+.social-links {
+	margin: 0;
+	padding: 0;
+}
+.social-links li {
+	display: inline-block;
+}
+.social-links a {
+	text-indent: -999em;
+}
+.bar {
+	display: inline-block;
+}
+.bar-outer {
+	width: 66%;
+	border: solid 1px #999;
+	height: 20px;
+	vertical-align: middle;
+}
+.average-bar {
+	width: 74%;
+	position: relative;
+}
+.average-bar-left {
+	float:right;
+	border-right-width: 0;
+}
+.average-bar-left .bar-inner {
+	float: right;
+}
+.average-bar-right {
+	float: left;
+}
+.minus-symbol {
+	top: -3px;
+	right: 5px;
+}
+.plus-symbol {
+	left: 5px;
+	top: -1px;
+}
+.minus-symbol,
+.plus-symbol {
+	font-size: 1.2em; 
+	font-weight: bold;
+	position: absolute;
+}
+.average-negative-number {
+	float: left;
+	font-size: 0.8em;
+	width: 26%;
+	position: relative;
+	top: 3px;
+}
+.average-positive-number {
+	float: right;
+	font-size: 0.8em;
+	position: relative;
+	top: 3px;
+	width: 26%;
+}
+.bar-inner {
+	height: 100%;
+}
+.text-bar {
+	width: 22%;
+	margin: 0 0 0 5%;
+	font-size: 0.8em;
+	font-weight: bold;
+	display: inline;
+	vertical-align: middle;
+}
+.average {
+	padding-top: 15px;
+	overflow: auto;
+}
+.average-container {
+	overflow: auto;
+	min-height: 22px;
+}
+.bar-red {
+	background: #ea3323;
+}
+.text-red {
+	color: #ea3323;
+}
+.bar-orange {
+	background: #f2a83b;
+}
+.text-orange {
+	color: #f2a83b;
+}
+.bar-grey {
+	background: #ddd;
+}
+.label {
+	font-size: 0.8em;
+	width: 100%;
+	margin: 8px 0 2px 0;
+	display: block;
+}
+.label-zero {
+	text-align: center;
+	display: block;
+	font-size: 0.8em;
+}
+.calculator-output-area {
+	margin: 20px 0;
+}
+select {
+	color: #ea3323;
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 13px 33px 13px 16px;
+	box-shadow: 2px 2px 8px 2px #e7e6e6;
+	border-color: rgb(169, 169, 169);
+	width: 100%;
+}
+
+@media (min-width: 471px) {
+	.header {
+		margin-bottom: 80px;
+	}
+	select {
+		width: 50%;
+	}
+	.col-md-6 {
+		width: 50%;
+		float: left;
+	}
+	.social-media {
+		margin-top: 0;
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		margin-bottom: 20px;
+	}
+	.header .text {
+		top: 35%;
+		max-width: 50%;
+		font-size: 1.4em;
+	}
+	select {
+		width: auto;
+	}
+	.average-positive-number {
+		width: 15%;
+		margin-left: 5%;
+	}
+	.average-negative-number {
+		width: 15%;
+		margin-right: 5%;
+	}
+	.average-bar {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.header .text {
+		max-width: 35%;
+		padding: 10px 20px;
+	}
+	.average-positive-number {
+		width: 10%;
+	}
+	.average-negative-number {
+		width: 10%;
+	}
+	.average-bar {
+		width: 85%;
+	}
+}
