@@ -12,108 +12,108 @@ var data =  [
 	"Region": "Scotland",
 	"Average rental April 16": "704",
 	"Average rental March 16": "677",
-	"Monthly variance": "104",
+	"Monthly variance": "4",
 	"Average rental April 15": "632",
-	"Annual variance": "111",
+	"Annual variance": "11",
 	"Average": "-82"
 },
 {
 	"Region": "North East",
 	"Average rental April 16": "532",
 	"Average rental March 16": "531",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "524",
-	"Annual variance": "102",
+	"Annual variance": "2",
 	"Average": "-254"
 },
 {
 	"Region": "Yorks and Humber",
 	"Average rental April 16": "627",
 	"Average rental March 16": "627",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "598",
-	"Annual variance": "105",
+	"Annual variance": "5",
 	"Average": "-159"
 },
 {
 	"Region": "North West",
 	"Average rental April 16": "659",
 	"Average rental March 16": "648",
-	"Monthly variance": "102",
+	"Monthly variance": "2",
 	"Average rental April 15": "659",
-	"Annual variance": "100",
+	"Annual variance": "0",
 	"Average": "-127"
 },
 {
 	"Region": "East Midland",
 	"Average rental April 16": "646",
 	"Average rental March 16": "646",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "599",
-	"Annual variance": "108",
+	"Annual variance": "8",
 	"Average": "-140"
 },
 {
 	"Region": "West Midlands",
 	"Average rental April 16": "659",
 	"Average rental March 16": "656",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "644",
-	"Annual variance": "102",
+	"Annual variance": "2",
 	"Average": "-127"
 },
 {
 	"Region": "East Anglia",
 	"Average rental April 16": "809",
 	"Average rental March 16": "803",
-	"Monthly variance": "101",
+	"Monthly variance": "1",
 	"Average rental April 15": "776",
-	"Annual variance": "104",
+	"Annual variance": "4",
 	"Average": "23"
 },
 {
 	"Region": "Greater London",
 	"Average rental April 16": "1543",
 	"Average rental March 16": "1536",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "1433",
-	"Annual variance": "108",
+	"Annual variance": "8",
 	"Average": "757"
 },
 {
 	"Region": "South East",
 	"Average rental April 16": "963",
 	"Average rental March 16": "950",
-	"Monthly variance": "101",
+	"Monthly variance": "1",
 	"Average rental April 15": "916",
-	"Annual variance": "105",
+	"Annual variance": "5",
 	"Average": "177"
 },
 {
 	"Region": "South West",
 	"Average rental April 16": "891",
 	"Average rental March 16": "880",
-	"Monthly variance": "101",
+	"Monthly variance": "1",
 	"Average rental April 15": "863",
-	"Annual variance": "103",
+	"Annual variance": "3",
 	"Average": "105"
 },
 {
 	"Region": "Northern Ireland",
 	"Average rental April 16": "608",
 	"Average rental March 16": "608",
-	"Monthly variance": "100",
+	"Monthly variance": "0",
 	"Average rental April 15": "590",
-	"Annual variance": "103",
+	"Annual variance": "3",
 	"Average": "-178"
 }
 ]
 
 var averages =  { "Average rental April 16"	: 786,
 "Average rental March 15" : 778,
-"Monthly variance"     	: 101,
+"Monthly variance"     	: 1,
 "Average rental April 15"	: 749,
-"Annual variance" 		: 105
+"Annual variance" 		: 5
 };
 
 // **** POLYFILLS ****
