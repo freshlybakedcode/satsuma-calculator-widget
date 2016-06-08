@@ -201,8 +201,8 @@ for(var i in averages){
 	averagesKeysArray.push(i);
 	averagesValuesArray.push(averages[i]);
 }
-console.log("Keys from UK averages sheet (averagesKeysArray): " + averagesKeysArray);
-console.log("Values from UK averages sheet (averageValuesArray): " + averagesValuesArray);
+// console.log("Keys from UK averages sheet (averagesKeysArray): " + averagesKeysArray);
+// console.log("Values from UK averages sheet (averageValuesArray): " + averagesValuesArray);
 
 //Before anything else happens, we need to see if there's an average column entered: this will be treated differently.
 //If there is, then we grab the data, store it in an array and remove it from the dataset until we need it.
@@ -212,22 +212,22 @@ var averageRowInAverageValues;
 var numberOfDataItems = Object.keys(data);
 
 if (Object.keys(data[0]).indexOf("Average") !== -1 ) {		//If there is no "Average" column defined then this won't run and we won't worry about it
-	console.log("An average column is detected...");
+	// console.log("An average column is detected...");
 for (i=0; i<numberOfDataItems.length; i++) {
     	averageColumnValues.push(data[i].Average);    		//Get the value in the average column and push it into our special array
 	    delete data[i].Average;            					//Then remove the average from the data array
 	}
  	averageRowInAverageValues = averages.Average;			//Get the value in the average column from the UK Averages sheet
 
- 	console.log("Here are all the average values for the main data sheet (averageColumnValues): " + averageColumnValues);
- 	console.log("The overall UK average from the averages data sheet (averageRowInAverageValues): " + averageRowInAverageValues);      
+ 	// console.log("Here are all the average values for the main data sheet (averageColumnValues): " + averageColumnValues);
+ 	// console.log("The overall UK average from the averages data sheet (averageRowInAverageValues): " + averageRowInAverageValues);      
  };
 
 //To calculate the amount the average bar (+/-) will have to fill up, we need to know the max/min values for the average:
 averageColumnValues.shift();    //First value will === "£" (or another unit) which is no good for Math
 maxAverageColumnValue = Math.max.apply(null, averageColumnValues);
 minAverageColumnValue = Math.min.apply(null, averageColumnValues);
-console.log("The maxAverageColumnValue = " + maxAverageColumnValue + " and the minAverageColumnValue = " + minAverageColumnValue);
+// console.log("The maxAverageColumnValue = " + maxAverageColumnValue + " and the minAverageColumnValue = " + minAverageColumnValue);
 
 //Set up the rest of the variables
 var numberOfColumns = Object.keys(data[0]).length;	//Will be one less than the spreadsheet as we've taken the average column away previously
@@ -242,7 +242,7 @@ var unitArray = [];				//Array to hold the units of measurement (£/%/etc)
 var calculatorSelectField = document.getElementById("calculator-select-field");
 var calculatorOutputArea = document.getElementById("calculator-output-area");
 
-console.log("This particular dataset gives us " + numberOfColumns + " columns and " + numberOfRows + " rows");
+// console.log("This particular dataset gives us " + numberOfColumns + " columns and " + numberOfRows + " rows");
 
 function populateDropdown() {
   //Add a "Please select" item to the dropdown
@@ -266,7 +266,7 @@ function getUnitArray() {
 	for (i=1; i<numberOfColumns; i++) {
 		unitArray.push(Object(data[0])[Object.keys(Object(data[0]))[i]]);
 	}
-	console.log("The units of measurement are: " + unitArray);
+	// console.log("The units of measurement are: " + unitArray);
 }
 
 // We need to get the maximum values for each column in order to work out how much to fill the UK average bars up
@@ -278,14 +278,14 @@ function setUpData() {
 		}
 		calculatedMaximums.push(Math.max.apply(null, temp)); //Push the highest value into the array
 	}
-	console.log("The maximum values for each column: " + calculatedMaximums);
+	// console.log("The maximum values for each column: " + calculatedMaximums);
 }
 
 function calculatorSelectFieldChange() {
 	var screenOutput = "";
 	var averageBarOutput = "";
 	var currentlySelected = calculatorSelectField.value;
-	console.log("You chose: " + (Object(data[currentlySelected])[Object.keys(Object(data[0]))[0]]) + " - that's option number " + currentlySelected);
+	// console.log("You chose: " + (Object(data[currentlySelected])[Object.keys(Object(data[0]))[0]]) + " - that's option number " + currentlySelected);
 	//Delete the contents of the output area (remove all existing bars etc)
 	while (calculatorOutputArea.hasChildNodes()) {
 		calculatorOutputArea.removeChild(calculatorOutputArea.firstChild);
@@ -341,7 +341,7 @@ function calculatorSelectFieldChange() {
 
 	  //Now make the special average bar to show variance
 	  if (averageColumnValues.length != 0) {                  //Only if there is an average column on the spreadsheet
-	    //This is the current difference: console.log(averageColumnValues[(calculatorSelectField.value)-1]);
+	    //This is the current difference: // console.log(averageColumnValues[(calculatorSelectField.value)-1]);
 	    var negativeBarPercentage;
 	    var positiveBarPercentage;
 	    var currentAverageColumnValue = averageColumnValues[(calculatorSelectField.value)-1];
