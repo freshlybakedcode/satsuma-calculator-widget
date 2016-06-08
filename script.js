@@ -246,16 +246,18 @@ console.log("This particular dataset gives us " + numberOfColumns + " columns an
 
 function populateDropdown() {
   //Add a "Please select" item to the dropdown
-  var el = document.createElement("option");
-  el.textContent = "Please select";
-  el.value = 0;
-  calculatorSelectField.appendChild(el);
+	var optionRow = document.createElement("option");
+	optionRow.setAttribute("value", 0);
+	var textNode = document.createTextNode("Please select");
+	optionRow.appendChild(textNode);
+	calculatorSelectField.appendChild(optionRow); 
   //Get the first value of each array in the object and add to the dropdown
   for (i = 1; i < numberOfRows; i++) {
-  	var el = document.createElement("option");
-  	el.textContent = Object(data[i])[Object.keys(Object(data[0]))[0]];
-  	el.value = i;
-  	calculatorSelectField.appendChild(el);
+	var optionRow = document.createElement("option");
+	optionRow.setAttribute("value", i);
+	var textNode = document.createTextNode(Object(data[i])[Object.keys(Object(data[0]))[0]]);
+	optionRow.appendChild(textNode);
+	calculatorSelectField.appendChild(optionRow);
   }
 }
 
