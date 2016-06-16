@@ -194,6 +194,10 @@ a {
 	margin: 8px 0 2px 0;
 	display: block;
 }
+.label-variance {
+	font-weight: bold;
+	margin-top: 16px;
+}
 .label-zero {
 	text-align: center;
 	display: block;
@@ -201,6 +205,11 @@ a {
 }
 .calculator-output-area {
 	margin: 20px 0;
+}
+.footer-text {
+	color: white;
+	font-size: 0.8em;
+	margin-left: 30px;
 }
 select {
 	color: #ea3323;

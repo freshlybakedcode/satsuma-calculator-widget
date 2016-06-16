@@ -296,7 +296,8 @@ function calculatorSelectFieldChange() {
 		var displayedFigureAverages;	//The number shown on the right of each line in the bar chart with the % or £ or whatever; for the right hand side chart
 		if (needRightHandColumn) {
 		//Create the relevant column on the left
-		screenOutput   += '<div class="col-sm-6">';
+		screenOutput   += '<div class="col-sm-6">'
+	    				+	'<h3 class="text-red">Your area</h3>';
 		for (i=1; i<numberOfColumns; i++) {
 		  	if (unitArray[i-1] === "%") {		// If there's a % sign then it needs to go at the end of the number
 				displayedFigure = Object(data[currentlySelected])[Object.keys(Object(data[0]))[i]] + unitArray[i-1]; 
@@ -316,7 +317,8 @@ function calculatorSelectFieldChange() {
 		screenOutput	+= '</div>';
 	    
 	    //Create the averages column on the right
-	    screenOutput	+= '<div class="col-sm-6">';
+	    screenOutput	+= '<div class="col-sm-6">'
+	    				+	'<h3 class="text-orange">UK Average</h3>';
 	    for (i=0; i<numberOfAverages; i++) {
 			if (unitArray[i] === "%") {		// If there's a % sign then it needs to go at the end of the number
 		 		displayedFigureAverages = averagesValuesArray[i] + unitArray[i]; 
@@ -353,8 +355,8 @@ function calculatorSelectFieldChange() {
 	    };
 
 	    averageBarOutput  		+=  '<div class="col-sm-12 average">'
-							    +    '<span class="label">'
-							    +      Object(data[currentlySelected])[Object.keys(Object(data[0]))[0]] + ' variance from UK average:'
+							    +    '<span class="label label-variance">'
+							    +      'Variance of the average rent in ' + Object(data[currentlySelected])[Object.keys(Object(data[0]))[0]] + ' versus the UK average:'
 							    +    '</span>'
 							    +    '<span class="label-zero">'
 							    +      0
